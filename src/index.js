@@ -1,11 +1,12 @@
-import { express } from 'express';
-import { path} from 'path';
-import { handlebars } from 'express';
-import { routesproduct } from './ruta/routesproduct' ;
+import express  from 'express';
+import path from 'path';
+import  handlebars  from 'express';
+import routesproduct  from './ruta/routesproduct' ;
 import * as http from 'http';
 import { ProductoController } from './classProduct';
 import { sockerService } from './server/socket';
-import { fs } from 'fs';
+import fs  from 'fs';
+import moment from 'moment';
 
 
 const app = express();
