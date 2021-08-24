@@ -1,6 +1,6 @@
 import express from 'express';
 import { ProductoController } from '../classProduct';
-import { sockerService } from '../services/socket';
+import { sockerService } from '../server/socket';
 
 const router = express.Router();
 
