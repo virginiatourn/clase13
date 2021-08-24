@@ -91,25 +91,4 @@ form.addEventListener('submit', function (e) {
     });
 });
 
-const chatForm = document.getElementById("chatForm");
-chatForm.addEventListener("submit", (e) => {
-  e.preventDefault();
 
-  
-  let chat = {
-    email: e.target.elements.email.value,
-    mensaje: e.target.elements.msg.value,
-  };
-
-  if (!msg) {
-    return false;
-  }
-
- 
-  socketIO.emit("chatMessage", chat);
-
- 
-  e.target.elements.msg.value = "";
-  e.target.elements.email.value = "";
-  e.target.elements.msg.focus();
-});
