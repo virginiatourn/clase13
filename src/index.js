@@ -6,7 +6,7 @@ import * as http from 'http';
 import { ProductoController } from './classProduct';
 import { sockerService } from './server/socket';
 import { fs } from 'fs';
-import { moment } from 'moment';
+
 
 const app = express();
 const puerto = 8080;
