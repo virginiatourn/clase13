@@ -1,6 +1,6 @@
 import express from 'express';
-import { ProductoController } from './../classProduct.js';
-import { sockerService } from '../server/socket.js';
+import { ProductoController } from '../src/classProduct.js';
+import { sockerService } from '../src/server/socket.js';
 
 const router = express.Router();
 
@@ -103,3 +103,4 @@ router.delete('/borrar/:id', (req, res) => {
 });
 
 export default router;
+
