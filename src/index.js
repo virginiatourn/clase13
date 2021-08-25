@@ -1,7 +1,7 @@
 import  express  from 'express';
 import  path from 'path';
 import  handlebars  from 'express-handlebars';
-import routesproduct from './ruta/routesproduct.js' ;
+import routesproduct from '../ruta/routesproduct.js' ;
 import * as http from 'http';
 import { ProductoController } from './classProduct.js';
 import { sockerService } from './server/socket.js';
