@@ -1,0 +1,45 @@
+<body>
+<form onsubmit="return addMessage(this)" action="/api/productos/guardar" method="post">
+    <div class="container"></div>
+        <h1 class="text-center"> Lista de Productos</h1>
+
+    <div class="mb-3">
+        
+            <label for="exampleInputEmail" class="form-label">Producto</label>
+            <input type="text" id="nombre" name="nombre" class="form.control" placeholder=""></input>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail" class="form-label">Precio</label>
+         <input type="text" id="price" name="price" class="form-control" placeholder=""></input>
+    </div>
+    <div class="mb-3">
+    <label for="thumbnail" class="form-label">Imagen</label>
+    <input type="text" id="thumbnail" name="thumbnail" class="form-label" placeholder=""></input>
+    </div>
+<button type="submit" class="btn btn-primary" >Guardar</button>
+
+</form>
+      </form>
+        </div>
+        <div class="listContainer">
+            <div class="list" id="list"></div>
+        </div>
+        <div class="chatContainer">
+            <form id="chatForm">
+                <label>Mensaje
+                    <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+                </label>
+                <label>Email
+                    <input id="email" type="email"></input>
+                </label>
+                <button class="btn btn-primary button">Send</button>
+            </form>
+            <div class="chat" id="chat"></div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+</body>
